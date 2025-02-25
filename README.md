@@ -40,7 +40,8 @@ CREATE TABLE students (
 ```
 
 ### **Screenshots** 📸  
-*(Include screenshots of your application UI here)*  
+![image](https://github.com/user-attachments/assets/b4c59064-83e8-44cb-be17-873d75e6acb8)
+
 
 ### **Contributing** 🤝  
 Feel free to fork and improve the project. Pull requests are welcome!  
