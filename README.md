@@ -77,9 +77,6 @@ The **Student Management System** works as follows:
 - Users can scroll and view the details dynamically.  
 
 ---
-Here’s the **Installation & Setup Guide** without the command line process.  
-
----
 
 # **📌 Installation & Setup Guide: Student Management System**
 
