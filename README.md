@@ -188,4 +188,10 @@ private static final String PASSWORD = "your_mysql_password";
 ![image](https://github.com/user-attachments/assets/b4c59064-83e8-44cb-be17-873d75e6acb8)
 ![image](https://github.com/user-attachments/assets/e8e22801-6de0-4f5b-a943-d439de9313b1)
 
+---
+
+## Tags
+#Java #Swing #JDBC #StudentManagement #CRUD #MySQL #JavaProject
+
+
 
