@@ -77,6 +77,115 @@ The **Student Management System** works as follows:
 - Users can scroll and view the details dynamically.  
 
 ---
+Here’s the **Installation & Setup Guide** without the command line process.  
+
+---
+
+# **📌 Installation & Setup Guide: Student Management System**
+
+## **🛠️ Prerequisites**
+Before running the project, ensure you have the following installed on your system:  
+- **Java Development Kit (JDK) 8+** → [Download Here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)  
+- **MySQL Database** → [Download Here](https://dev.mysql.com/downloads/mysql/)  
+- **MySQL Connector/J (JAR file)** → [Download Here](https://dev.mysql.com/downloads/connector/j/)  
+- **Apache NetBeans / IntelliJ IDEA (Recommended IDEs)** → [Download Here](https://www.jetbrains.com/idea/download/?section=windows)  
+
+---
+
+## **📥 Installation Steps**
+
+### **1️⃣ Download the Project Files**
+- Extract the downloaded project folder to a suitable location on your system.  
+
+### **2️⃣ Install & Configure MySQL Database**
+1. **Install MySQL** from [MySQL Official Website](https://dev.mysql.com/downloads/mysql/).  
+2. Open **MySQL Workbench** or **Command Line** and create a new database:
+   ```sql
+   CREATE DATABASE student_management;
+   ```
+3. **Select the database**:
+   ```sql
+   USE student_management;
+   ```
+4. **Create the students table**:
+   ```sql
+   CREATE TABLE students (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       name VARCHAR(100) NOT NULL,
+       age INT NOT NULL,
+       grade VARCHAR(10) NOT NULL
+   );
+   ```
+5. (Optional) Insert sample data:  
+   ```sql
+   INSERT INTO students (name, age, grade) VALUES ('John Doe', 20, 'A');
+   INSERT INTO students (name, age, grade) VALUES ('Jane Smith', 22, 'B');
+   ```
+
+---
+
+## **📂 Adding MySQL Connector/J (JAR File) to Project**
+### **3️⃣ Download MySQL Connector/J**
+1. Go to [MySQL Connector/J Official Page](https://dev.mysql.com/downloads/connector/j/).  
+2. Download the latest version **(Platform Independent - ZIP Archive)**.  
+3. Extract the ZIP file and locate **`mysql-connector-java-<version>.jar`**.  
+
+### **4️⃣ Add MySQL Connector to Project**
+#### **🔹 In NetBeans**  
+1. **Right-click the project** → `Properties`.  
+2. Go to `Libraries` → Click `Add JAR/Folder`.  
+3. Select **`mysql-connector-java-<version>.jar`** and click `Open`.  
+4. Click `OK` to save changes.  
+
+#### **🔹 In IntelliJ IDEA**  
+1. **Right-click the project** → `Open Module Settings`.  
+2. Go to `Libraries` → Click `+ (Add Library)`.  
+3. Select **`mysql-connector-java-<version>.jar`** and click `Apply`.  
+
+---
+
+## **⚙️ Configure & Run the Project**
+
+### **5️⃣ Open the Project in an IDE**
+- **NetBeans**: Click `File > Open Project`, then select the extracted project folder.  
+- **IntelliJ IDEA**: Click `Open` and select the project directory.  
+
+### **6️⃣ Configure Database Credentials**
+Edit **`DatabaseHelper.java`** file and update MySQL credentials:
+```java
+private static final String URL = "jdbc:mysql://localhost:3306/student_management";
+private static final String USER = "your_mysql_username";
+private static final String PASSWORD = "your_mysql_password";
+```
+
+### **7️⃣ Run the Project**
+- Click the **"Run" button** in NetBeans/IntelliJ.  
+
+---
+
+## **🚀 Features of the Student Management System**
+✔️ **Add New Students**  
+✔️ **Update Student Details**  
+✔️ **Delete Students**  
+✔️ **View Student List**  
+✔️ **Interactive GUI using Java Swing**  
+✔️ **MySQL Database Integration**  
+
+---
+
+## **🛠️ Troubleshooting**
+### **1️⃣ Database Connection Issues?**
+- Ensure MySQL is **running** (`mysql -u root -p` to check).  
+- Verify MySQL **username and password** in `DatabaseHelper.java`.  
+
+### **2️⃣ MySQL Driver Not Found?**
+- Download the **MySQL Connector JAR** from [here](https://dev.mysql.com/downloads/connector/j/).  
+- Add it to the classpath in your IDE settings.  
+
+### **3️⃣ GUI Not Opening?**
+- Make sure **Java Swing is supported** (JDK 8+ recommended).  
+
+---
 
 ### **Screenshots** 📸  
 ![image](https://github.com/user-attachments/assets/b4c59064-83e8-44cb-be17-873d75e6acb8)
